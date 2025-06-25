@@ -6,6 +6,7 @@ const Cards = () => {
       
       <div>Cards Rathee</div>
       <div>Cards Rathee</div>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, quaerat.</p>
     </div>
   )
 }
