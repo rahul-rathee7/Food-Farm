@@ -723,7 +723,7 @@ const Footer = ()=>{
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: " pt-3 gap-2 w-30 flex flex-col",
+                        className: " gap-2 w-30 flex flex-col",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "font-bold text-lg pb-4",
@@ -731,7 +731,7 @@ const Footer = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/src/app/shared/Footer.tsx",
                                 lineNumber: 37,
-                                columnNumber: 56
+                                columnNumber: 51
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "#",
@@ -739,7 +739,7 @@ const Footer = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/src/app/shared/Footer.tsx",
                                 lineNumber: 37,
-                                columnNumber: 109
+                                columnNumber: 104
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "#",
@@ -747,7 +747,7 @@ const Footer = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/src/app/shared/Footer.tsx",
                                 lineNumber: 37,
-                                columnNumber: 129
+                                columnNumber: 124
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "#",
@@ -755,7 +755,7 @@ const Footer = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/src/app/shared/Footer.tsx",
                                 lineNumber: 37,
-                                columnNumber: 153
+                                columnNumber: 148
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "#",
@@ -763,7 +763,7 @@ const Footer = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/src/app/shared/Footer.tsx",
                                 lineNumber: 37,
-                                columnNumber: 175
+                                columnNumber: 170
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "#",
@@ -771,7 +771,7 @@ const Footer = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/src/app/shared/Footer.tsx",
                                 lineNumber: 37,
-                                columnNumber: 199
+                                columnNumber: 194
                             }, this)
                         ]
                     }, void 0, true, {
@@ -780,7 +780,7 @@ const Footer = ()=>{
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: " pt-3 gap-2 flex flex-col",
+                        className: " gap-2 flex flex-col",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "font-bold text-lg pb-4",
@@ -788,7 +788,7 @@ const Footer = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/src/app/shared/Footer.tsx",
                                 lineNumber: 38,
-                                columnNumber: 50
+                                columnNumber: 45
                             }, this),
                             " ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -797,7 +797,7 @@ const Footer = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/src/app/shared/Footer.tsx",
                                 lineNumber: 38,
-                                columnNumber: 98
+                                columnNumber: 93
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "#",
@@ -805,7 +805,7 @@ const Footer = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/src/app/shared/Footer.tsx",
                                 lineNumber: 38,
-                                columnNumber: 125
+                                columnNumber: 120
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "#",
@@ -813,7 +813,7 @@ const Footer = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/src/app/shared/Footer.tsx",
                                 lineNumber: 38,
-                                columnNumber: 153
+                                columnNumber: 148
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "#",
@@ -821,7 +821,7 @@ const Footer = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/src/app/shared/Footer.tsx",
                                 lineNumber: 38,
-                                columnNumber: 179
+                                columnNumber: 174
                             }, this)
                         ]
                     }, void 0, true, {
@@ -830,7 +830,7 @@ const Footer = ()=>{
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: " pt-3 gap-2 flex flex-col",
+                        className: " gap-2 flex flex-col",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "font-bold text-lg pb-4",
@@ -838,7 +838,7 @@ const Footer = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/src/app/shared/Footer.tsx",
                                 lineNumber: 39,
-                                columnNumber: 50
+                                columnNumber: 45
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "#",
@@ -846,7 +846,7 @@ const Footer = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/src/app/shared/Footer.tsx",
                                 lineNumber: 39,
-                                columnNumber: 103
+                                columnNumber: 98
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "#",
@@ -854,7 +854,7 @@ const Footer = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/src/app/shared/Footer.tsx",
                                 lineNumber: 39,
-                                columnNumber: 127
+                                columnNumber: 122
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "#",
@@ -862,7 +862,7 @@ const Footer = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/src/app/shared/Footer.tsx",
                                 lineNumber: 39,
-                                columnNumber: 151
+                                columnNumber: 146
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "#",
@@ -870,7 +870,7 @@ const Footer = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/src/app/shared/Footer.tsx",
                                 lineNumber: 39,
-                                columnNumber: 174
+                                columnNumber: 169
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "#",
@@ -878,7 +878,7 @@ const Footer = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/src/app/shared/Footer.tsx",
                                 lineNumber: 39,
-                                columnNumber: 197
+                                columnNumber: 192
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "#",
@@ -886,7 +886,7 @@ const Footer = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/src/app/shared/Footer.tsx",
                                 lineNumber: 39,
-                                columnNumber: 217
+                                columnNumber: 212
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "#",
@@ -894,7 +894,7 @@ const Footer = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/src/app/shared/Footer.tsx",
                                 lineNumber: 39,
-                                columnNumber: 241
+                                columnNumber: 236
                             }, this)
                         ]
                     }, void 0, true, {
