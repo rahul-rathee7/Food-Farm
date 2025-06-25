@@ -4,8 +4,8 @@ const Cards = () => {
   return (
     <div>
       
-      <div>Cards Rathee</div>
-      <div>Cards Rathee</div>
+      <div>CardsAjay</div>
+      <div>CardsAjay</div>
     </div>
   )
 }
