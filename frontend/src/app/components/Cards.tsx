@@ -7,7 +7,7 @@ import avacado from '../../../public/assets/images/avacado.png'
 const Cards = () => {
   return (
     
-    <div className='grid grid-cols-5 gap-3 bg-white h-full w-full p-2 rounded-3xl'>
+    <div className='grid grid-cols-5 gap-3 h-full w-full p-2 rounded-3xl'>
 
         <div className='bg-white rounded-xl px-2 py-4  w-full'>
             <Image className='bg-gray-300 p-4 rounded-xl h-[70%]' src={s} alt="strawberry" />
