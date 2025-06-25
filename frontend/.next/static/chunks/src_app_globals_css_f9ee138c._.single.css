@@ -28,14 +28,14 @@
     --spacing: .25rem;
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
-    --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-9xl: 8rem;
+    --text-9xl--line-height: 1;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-sm: .25rem;
@@ -264,6 +264,10 @@
     margin-top: calc(var(--spacing) * 3);
   }
 
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
+
   .flex {
     display: flex;
   }
@@ -272,12 +276,8 @@
     display: grid;
   }
 
-  .h-\[50\%\] {
-    height: 50%;
-  }
-
-  .h-\[60\%\] {
-    height: 60%;
+  .h-3\/4 {
+    height: 75%;
   }
 
   .h-\[60vh\] {
@@ -286,10 +286,6 @@
 
   .h-\[70\%\] {
     height: 70%;
-  }
-
-  .h-\[70\] {
-    height: 70px;
   }
 
   .h-full {
@@ -308,16 +304,16 @@
     width: 58.3333%;
   }
 
+  .w-9\/12 {
+    width: 75%;
+  }
+
   .w-11\/12 {
     width: 91.6667%;
   }
 
   .w-30 {
     width: calc(var(--spacing) * 30);
-  }
-
-  .w-50 {
-    width: calc(var(--spacing) * 50);
   }
 
   .w-\[80\%\] {
@@ -372,6 +368,10 @@
 
   .gap-10 {
     gap: calc(var(--spacing) * 10);
+  }
+
+  .self-start {
+    align-self: flex-start;
   }
 
   .rounded-2xl {
@@ -455,6 +455,10 @@
     padding: calc(var(--spacing) * 5);
   }
 
+  .p-7 {
+    padding: calc(var(--spacing) * 7);
+  }
+
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
@@ -491,6 +495,10 @@
     padding-block: calc(var(--spacing) * 8);
   }
 
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
+  }
+
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
   }
@@ -522,18 +530,14 @@
     line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
 
+  .text-9xl {
+    font-size: var(--text-9xl);
+    line-height: var(--tw-leading, var(--text-9xl--line-height));
+  }
+
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
-  }
-
-  .text-xl {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
-  }
-
-  .text-\[10rem\] {
-    font-size: 10rem;
   }
 
   .leading-none {
@@ -572,6 +576,10 @@
     text-decoration-line: line-through;
   }
 
+  .underline {
+    text-decoration-line: underline;
+  }
+
   .antialiased {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -605,6 +613,11 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.article-box {
+  background-color: #181818;
+  box-shadow: 2px 2px 10px #fff;
 }
 
 @property --tw-translate-x {

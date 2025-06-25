@@ -2,6 +2,7 @@
 import Main from './components/Main';
 import Categories from './components/Categories';
 import  Cards  from './components/Cards';
+import Articles from './components/Articles';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Categories />
         <Cards />
       </div>
+      <Articles />
     </div>
   );
 }
