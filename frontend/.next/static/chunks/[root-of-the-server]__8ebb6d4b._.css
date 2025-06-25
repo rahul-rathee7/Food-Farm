@@ -122,6 +122,8 @@
     --spacing: .25rem;
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
@@ -131,7 +133,6 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-sm: .25rem;
-    --radius-md: .375rem;
     --radius-lg: .5rem;
     --radius-xl: .75rem;
     --radius-2xl: 1rem;
@@ -341,20 +342,12 @@
     left: 50%;
   }
 
-  .m-2 {
-    margin: calc(var(--spacing) * 2);
-  }
-
   .m-5 {
     margin: calc(var(--spacing) * 5);
   }
 
   .mx-auto {
     margin-inline: auto;
-  }
-
-  .my-2 {
-    margin-block: calc(var(--spacing) * 2);
   }
 
   .mt-2 {
@@ -365,10 +358,6 @@
     margin-top: calc(var(--spacing) * 3);
   }
 
-  .mt-4 {
-    margin-top: calc(var(--spacing) * 4);
-  }
-
   .flex {
     display: flex;
   }
@@ -377,20 +366,24 @@
     display: grid;
   }
 
-  .h-\[50px\] {
-    height: 50px;
+  .h-\[50\%\] {
+    height: 50%;
+  }
+
+  .h-\[60\%\] {
+    height: 60%;
   }
 
   .h-\[60vh\] {
     height: 60vh;
   }
 
-  .h-\[400px\] {
-    height: 400px;
+  .h-\[70\%\] {
+    height: 70%;
   }
 
-  .h-\[500px\] {
-    height: 500px;
+  .h-\[70\] {
+    height: 70px;
   }
 
   .h-full {
@@ -415,6 +408,10 @@
 
   .w-30 {
     width: calc(var(--spacing) * 30);
+  }
+
+  .w-50 {
+    width: calc(var(--spacing) * 50);
   }
 
   .w-\[80\%\] {
@@ -471,20 +468,12 @@
     gap: calc(var(--spacing) * 10);
   }
 
-  .rounded {
-    border-radius: .25rem;
-  }
-
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
 
   .rounded-lg {
     border-radius: var(--radius-lg);
-  }
-
-  .rounded-md {
-    border-radius: var(--radius-md);
   }
 
   .rounded-sm {
@@ -520,10 +509,6 @@
     border-bottom-width: 3px;
   }
 
-  .border-black {
-    border-color: var(--color-black);
-  }
-
   .border-gray-400 {
     border-color: var(--color-gray-400);
   }
@@ -538,10 +523,6 @@
 
   .bg-gray-300 {
     background-color: var(--color-gray-300);
-  }
-
-  .bg-gray-400 {
-    background-color: var(--color-gray-400);
   }
 
   .bg-red-500 {
@@ -638,6 +619,11 @@
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
   }
 
   .text-\[10rem\] {
