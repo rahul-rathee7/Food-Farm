@@ -4,6 +4,7 @@ import Categories from './components/Categories';
 import  Cards  from './components/Cards';
 import Articles from './components/Articles';
 import SubscribeSection from './components/SubscribeSection';
+import AboutInformation from './components/AboutInformation';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       </div>
       <Articles />
       <SubscribeSection />
+      <AboutInformation />
     </div>
   );
 }
