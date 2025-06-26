@@ -3,6 +3,7 @@ import Main from './components/Main';
 import Categories from './components/Categories';
 import  Cards  from './components/Cards';
 import Articles from './components/Articles';
+import SubscribeSection from './components/SubscribeSection';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Cards />
       </div>
       <Articles />
+      <SubscribeSection />
     </div>
   );
 }

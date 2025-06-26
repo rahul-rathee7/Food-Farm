@@ -8,7 +8,7 @@ import articleImage3 from '../../../public/assets/images/sabji mandi.webp'
 
 const Articles = () => {
     return (
-        <div className='w-9/12 mx-auto mt-20 text-white'>
+        <div className='w-9/12 mx-auto mt-20 text-white py-10'>
             <div className='flex items-center justify-between w-full'>
                 <h1 className='text-4xl font-bold'>Our Latest Articles</h1>
                 <button type="button">VIEW ALL</button>

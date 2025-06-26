@@ -21,7 +21,7 @@ const Navbar = () => {
               <option className='text-white bg-black'>Canned Foods</option>
               <option className='text-white bg-black'>Dairy</option>
             </select>
-            <input className='bg-white w-full p-5 focus:outline-none' type="text" />
+            <input className='bg-white text-black text-2xl w-full p-5 focus:outline-none' type="text" />
             <button className='hover:bg-red-500 rounded-r-xl w-1/3 p-5' type='submit'>SEARCH</button>
           </form>
         </div>
