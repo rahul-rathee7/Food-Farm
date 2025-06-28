@@ -905,26 +905,6 @@ body {
   box-shadow: 2px 2px 10px #fff;
 }
 
-#bg-image {
-  background-image: url("../media/584072-1920x1080-desktop-full-hd-tomato-wallpaper-photo.fa337ab4.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#sub-bg-image {
-  background-image: url("../media/medium-shot-woman-living-healthy-life_23-2151201970.a81c112a.webp");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#about-bg-image {
-  background-image: url("../media/hand-drawn-pattern-background_23-2150829943.c4588e67.webp");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 @property --tw-space-y-reverse {
   syntax: "*";
   inherits: false;
