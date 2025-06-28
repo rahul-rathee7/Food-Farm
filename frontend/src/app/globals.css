@@ -29,3 +29,23 @@ body {
   box-shadow: 2px 2px 10px white;
   background-color: rgb(24, 24, 24);
 }
+
+#bg-image{
+  background-image: url('../../public/assets/images/584072-1920x1080-desktop-full-hd-tomato-wallpaper-photo.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#sub-bg-image{
+  background-image: url('../../public/assets/images/medium-shot-woman-living-healthy-life_23-2151201970.webp');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+#about-bg-image{
+  background-image: url('../../public/assets/images/hand-drawn-pattern-background_23-2150829943.webp');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}

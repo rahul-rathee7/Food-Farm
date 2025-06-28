@@ -11,7 +11,7 @@ import f from '../../../public/assets/images/f.webp'
 const Footer = () => {
   return (
     <div className='py-8'>
-    <div className=' w-[80%] flex mx-auto justify-evenly relative pb-18 border-b-3 border-gray-400'>
+    <div className=' w-[80%] flex mx-auto justify-evenly pb-18 border-b-3 border-gray-400'>
       <div className='flex flex-col'>
       <div>
         <Image src={image1} alt='logo' width={200} height={200} />
