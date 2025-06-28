@@ -36,6 +36,7 @@ desktop.ini
 
 # === Next.js (Frontend) ===
 .next/
+static/
 out/
 coverage/
 .cache/

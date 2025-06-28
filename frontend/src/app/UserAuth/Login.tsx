@@ -1,61 +1,71 @@
-'use client' // if using in Next.js App Router
-
+'use client'
 import { useState } from 'react'
 
-export default function Login({setisLoginSection}) {
+export default function Login({ closeLogin, openSignup }) {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
-    console.log('Logging in with:', { email, password })
+    console.log({ email, password })
+  }
+
+  const stopClick = (e) => {
+    e.stopPropagation()
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center text-black px-4">
-      <div className="flex flex-col max-w-md w-full bg-white rounded-2xl shadow-lg p-8">
-        <button className='self-end font-extrabold rounded-full' type='button' onClick={() => setisLoginSection(false)}>X</button>
-        <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">Login</h2>
-        <form onSubmit={handleSubmit} className="space-y-5">
-          <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-600 mb-1">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              placeholder="you@example.com"
-            />
-          </div>
+    <div
+      className="fixed inset-0 bg-black/60 flex justify-center items-center text-black"
+      onMouseDown={closeLogin}
+    >
+      <div
+        className="bg-white p-6 rounded-xl w-[400px] relative"
+        onMouseDown={stopClick}
+      >
+        <button
+          className="absolute top-2 right-4 text-xl font-bold"
+          type="button"
+          onClick={closeLogin}
+        >
+          X
+        </button>
 
-          <div>
-            <label htmlFor="password" className="block text-sm font-medium text-gray-600 mb-1">
-              Password
-            </label>
-            <input
-              type="password"
-              id="password"
-              className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-              placeholder="••••••••"
-            />
-          </div>
+        <h2 className="text-2xl font-bold text-center mb-4 ">Login</h2>
 
-          <button
-            type="submit"
-            className="w-full py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold transition duration-300"
-          >
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Email"
+            className="w-full border p-2 rounded "
+            required
+          />
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Password"
+            className="w-full border p-2 rounded "
+            required
+          />
+          <button className="w-full bg-blue-600 text-white py-2 rounded">
             Sign In
           </button>
         </form>
-        <p className="text-sm text-gray-500 text-center mt-4">
-          Don&apos;t have an account? <a href="#" className="text-blue-600 hover:underline">Register</a>
+
+        <p className="text-sm text-center mt-4">
+          Don’t have an account?{' '}
+          <span
+            className="text-blue-600 cursor-pointer"
+            onClick={() => {
+              openSignup()
+              closeLogin()
+            }}
+          >
+            Register
+          </span>
         </p>
       </div>
     </div>
