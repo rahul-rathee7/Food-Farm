@@ -8,9 +8,9 @@ import AboutInformation from './components/AboutInformation';
 
 export default function Home() {
   return (
-    <div>
+    <div className='w-full'>
       <Main />
-      <div className='flex gap-2 w-11/12 mx-auto'>
+      <div className='flex gap-2 w-full lg:w-11/12 mx-auto'>
         <Categories />
         <Cards />
       </div>

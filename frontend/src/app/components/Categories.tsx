@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Categories = () => {
   return (
     <Container>
-    <div className='flex flex-col gap-3'>
+    <div className='flex flex-col gap-3 hidden lg:block xl:block 2xl:block w-9/12'>
       <p className='text-3xl'>Categories</p>
       <div className='categories pl-5'>
       <p>Fruits And Vegetables</p>

@@ -16,7 +16,7 @@ export default function Login({ closeLogin, openSignup }) {
 
   return (
     <div
-      className="fixed inset-0 bg-black/60 flex justify-center items-center text-black"
+      className="fixed inset-0 z-50 bg-black/60 flex justify-center items-center text-black"
       onMouseDown={closeLogin}
     >
       <div
