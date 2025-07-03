@@ -8,7 +8,7 @@ const Cards = () => {
     useEffect(() => {
         async function myFunc() {
             try {
-                await axios.get('http://172.17.5.53:5000/data').then((res) => {
+                await axios.get('http://localhost:5000/data').then((res) => {
                     setarr(res.data);
                 });
             } catch (err) {
