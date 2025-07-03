@@ -1,14 +1,18 @@
-let express = require('express');
-let app = express();
+const express = require('express');
+const app = express();
+const dataRoute = require('./arrays.js');
+const cors = require('cors');
 
-let cors = require('cors');
-app.use(cors());
-let PORT = 5000;
+// Use only one CORS middleware
+app.use(cors({
+    origin: ['http://172.17.5.53:3000','http://localhost:3000'] // Allow only React frontend
+}));
 
-app.get('/users', (req, res) => {
-    
-})
+app.use(express.json());
 
+app.use('/data', dataRoute); // Route at /data
+
+const PORT = 5000;
 app.listen(PORT, () => {
-    console.log("server is running on " + PORT);
-})
+  console.log('Server running on http://localhost:' + PORT);
+});

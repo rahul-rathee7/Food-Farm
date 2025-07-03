@@ -11,7 +11,7 @@ import f from '../../../public/assets/images/f.webp'
 const Footer = () => {
   return (
     <div className='py-8'>
-    <div className=' w-[80%] flex mx-auto justify-evenly pb-18 border-b-3 border-gray-400'>
+    <div className='sm:w-[80%] flex flex-col gap-10 sm:gap-0 sm:flex-row mx-auto sm:justify-evenly items-center sm:items-start pb-18 border-b-3 border-gray-400'>
       <div className='flex flex-col'>
       <div>
         <Image src={image1} alt='logo' width={200} height={200} />
@@ -34,12 +34,12 @@ const Footer = () => {
         </a>
       </div>
       </div>
-      <div className=' gap-2 w-30 flex flex-col' ><p className='font-bold text-lg pb-4'>Quick Links</p><a href="#">Home</a><a href="#">About Us</a><a href="#">Offers</a><a href="#">Services</a><a href="#">Contect Us</a></div>
-      <div className=' gap-2 flex flex-col'><p className='font-bold text-lg pb-4'>About</p> <a href="#">How It Work</a><a href="#">Our Packages</a><a href="#">Promotions</a><a href="#">Refer A Friend</a></div>
-      <div className=' gap-2 flex flex-col'><p className='font-bold text-lg pb-4'>Help Center</p><a href="#">Payments</a><a href="#">Shipping</a><a href="#">Product</a><a href="#">Returns</a><a href="#">FAQs</a><a href="#">Checkout</a><a href="#">Other Issues</a></div>
+      <div className='text-center sm:text-left gap-2 flex flex-col' ><p className='font-bold text-lg pb-4'>Quick Links</p><a href="#">Home</a><a href="#">About Us</a><a href="#">Offers</a><a href="#">Services</a><a href="#">Contect Us</a></div>
+      <div className='text-center sm:text-left gap-2 flex flex-col'><p className='font-bold text-lg pb-4'>About</p> <a href="#">How It Work</a><a href="#">Our Packages</a><a href="#">Promotions</a><a href="#">Refer A Friend</a></div>
+      <div className='text-center sm:text-left gap-2 flex flex-col'><p className='font-bold text-lg pb-4'>Help Center</p><a href="#">Payments</a><a href="#">Shipping</a><a href="#">Product</a><a href="#">Returns</a><a href="#">FAQs</a><a href="#">Checkout</a><a href="#">Other Issues</a></div>
     </div>
     
-    <div className='w-[80%] flex justify-between mx-auto py-5'>
+    <div className='w-[80%] flex sm:flex-row flex-col-reverse sm:gap-0 gap-3 justify-between mx-auto py-5'>
       <p>© 2025 FoodFarm. All rights reserved.</p>
       <p>Designed by Rahul & Ajay</p>
     </div>
