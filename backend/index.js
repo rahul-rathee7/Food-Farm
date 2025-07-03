@@ -5,7 +5,7 @@ const cors = require('cors');
 
 // Use only one CORS middleware
 app.use(cors({
-    origin: 'http://172.17.5.53:3000' // Allow only React frontend
+    origin: ['http://172.17.5.53:3000','http://localhost:3000'] // Allow only React frontend
 }));
 
 app.use(express.json());

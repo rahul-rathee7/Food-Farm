@@ -29,14 +29,10 @@ desktop.ini
 *.njsproj
 *.sln
 
-# === Git ===
-.git/
-.gitignore
-*.orig
-
 # === Next.js (Frontend) ===
 .next/
 static/
+chunks/
 out/
 coverage/
 .cache/
