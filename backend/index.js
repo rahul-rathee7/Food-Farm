@@ -3,13 +3,9 @@ const app = express();
 const dataRoute = require('./arrays.js');
 const cors = require('cors');
 
-
+// Use only one CORS middleware
 app.use(cors({
-<<<<<<< HEAD
-    origin: ['http://172.17.5.53:3000','http://localhost:3000', 'http://10.100.0.43:3000'] // Allow only React frontend
-=======
-    origin: ['http://172.17.5.53:3000','http://localhost:3000'] 
->>>>>>> dev
+    origin: ['http://172.17.5.53:3000','http://localhost:3000', 'http://10.100.0.43:3000'] 
 }));
 
 app.use(express.json());

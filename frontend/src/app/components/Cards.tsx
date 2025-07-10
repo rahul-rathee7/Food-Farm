@@ -8,11 +8,7 @@ const Cards = () => {
     useEffect(() => {
         async function myFunc() {
             try {
-<<<<<<< HEAD
-                await axios.get('http://10.100.0.43:5000/data').then((res) => {
-=======
                 await axios.get('http://localhost:5000/data').then((res) => {
->>>>>>> dev
                     setarr(res.data);
                 });
             } catch (err) {
