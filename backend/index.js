@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const dataRoute = require('./arrays.js');
+const dataRoute = require('./middleware/arrays.js');
 const cors = require('cors');
 
 // Use only one CORS middleware
