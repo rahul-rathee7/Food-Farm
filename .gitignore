@@ -53,6 +53,5 @@ pids
 *.pid.lock
 
 # === Optional: Ignore compiled TypeScript files ===
-*.js
 *.js.map
 *.d.ts
