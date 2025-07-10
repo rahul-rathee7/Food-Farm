@@ -56,14 +56,14 @@ const Navbar = () => {
           </div>
         </div>
         <div className='justify-between hidden lg:w-11/12 xl:flex '>
-          <div className='py-5 px-10 hover:bg-red-500 rounded-sm'>HOME</div>
-          <div className='py-5 px-10 hover:bg-red-500 rounded-sm'>ORGANIC</div>
-          <div className='py-5 px-10 hover:bg-red-500 rounded-sm'>HERBS</div>
-          <div className='py-5 px-10 hover:bg-red-500 rounded-sm'>SNACKS</div>
-          <div className='py-5 px-10 hover:bg-red-500 rounded-sm'>BEVERAGES</div>
-          <div className='py-5 px-10 hover:bg-red-500 rounded-sm'>BAKERY</div>
-          <div className='py-5 px-10 hover:bg-red-500 rounded-sm'>CANNED FOODS</div>
-          <div className='py-5 px-10 hover:bg-red-500 rounded-sm'>DAIRY</div>
+          <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>HOME</div>
+          <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>ORGANIC</div>
+          <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>HERBS</div>
+          <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>SNACKS</div>
+          <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>BEVERAGES</div>
+          <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>BAKERY</div>
+          <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>CANNED FOODS</div>
+          <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>DAIRY</div>
         </div>
       </div>
       {

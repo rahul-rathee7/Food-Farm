@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import Image from 'next/image'
+import Image from 'next/image';
 
 const Cards = () => {
     const [arr, setarr] = useState([]);
@@ -24,20 +24,20 @@ const Cards = () => {
             {arr.map((items, index) => (
                 <div key={index} className='flex flex-col gap-5 bg-white rounded-xl px-2 py-4 h-full w-full'>
                     <div className='relative h-[280px] w-full'>
-                        <Image
-                            className='bg-gray-300 rounded-xl object-cover'
-                            src={items.url}
-                            alt={items.alt}
-                            fill
-                            sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+                        <Image 
+                            src={items.image}
+                            alt={items.name}
+                            className='object-contain rounded-xl h-full w-full'
+                            width={300}
+                            height={300}
                         />
                     </div>
                     <div className='px-3 mt-2'>
-                        <p className='text-black font-semibold text-2xl'>walpaper</p>
+                        <p className='text-black font-semibold text-2xl'>{items.name}</p>
                         <div className='flex justify-evenly text-2xl'>
                             <span className='flex'>
                                 {/* <p className='text-gray-500 line-through'>₹120</p> */}
-                                <p className='text-black px-3'><b>price</b></p>
+                                <p className='text-black px-3'><b>₹price</b></p>
                             </span>
                             <span className='border border-gray-500 text-gray-500 px-2'>10% off</span>
                         </div>
