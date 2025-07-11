@@ -5,16 +5,17 @@ import Image from 'next/image';
 const Cards = () => {
     const [arr, setarr] = useState([]);
 
-    useEffect(() => {
-        async function myFunc() {
-            try {
-                await axios.get('http://localhost:5000/data').then((res) => {
-                    setarr(res.data);
-                });
-            } catch (err) {
-                console.log("Error is this: ", err);
-            }
+    async function myFunc() {
+        try {
+            await axios.get('http://localhost:5000/data').then((res) => {
+                setarr(res.data);
+            });
+        } catch (err) {
+            console.log("Error is this: ", err);
         }
+    }
+    
+    useEffect(() => {
 
         myFunc();
     }, []);
@@ -27,7 +28,7 @@ const Cards = () => {
                         <Image 
                             src={items.image}
                             alt={items.name}
-                            className='object-contain rounded-xl h-full w-full'
+                            className='object-cover rounded-xl h-full w-full'
                             width={300}
                             height={300}
                         />
@@ -36,10 +37,10 @@ const Cards = () => {
                         <p className='text-black font-semibold text-2xl'>{items.name}</p>
                         <div className='flex justify-evenly text-2xl'>
                             <span className='flex'>
-                                {/* <p className='text-gray-500 line-through'>₹120</p> */}
-                                <p className='text-black px-3'><b>₹price</b></p>
+                                <p className='text-gray-500 line-through'>₹{items.originalPrice}</p>
+                                <p className='text-black px-3'><b>₹{items.currentPrice}</b></p>
                             </span>
-                            <span className='border border-gray-500 text-gray-500 px-2'>10% off</span>
+                            <span className='border border-gray-500 text-gray-500 px-2 pt-1 sm:text-sm'>{items.discount}% off</span>
                         </div>
                         <button className='bg-red-500 w-full mt-3 p-2 rounded-xl text-white' type='button'>
                             Add to Cart
