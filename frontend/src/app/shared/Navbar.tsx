@@ -7,10 +7,12 @@ import profile from '../../../public/assets/account_circle_24dp_E3E3E3_FILL0_wgh
 import MenuIcon from '../../../public/assets/icons/hamburger-menu-filled-icon-in-transparent-background-basic-app-and-web-ui-bold-line-icon-eps10-free-vector.jpg'
 import Login from '../UserAuth/Login'
 import Signup from '../UserAuth/Signup'
+import CartSection from '../components/CartSection';
 
 const Navbar = () => {
   const [isLoginSection, setisLoginSection] = useState(false);
   const [isSignupSection, setisSignupSection] = useState(false);
+  const [isCartSection, setisCartSection] = useState(false);
 
   return (
     <>
@@ -45,7 +47,7 @@ const Navbar = () => {
           </div>
           <div className='flex gap-10 hidden lg:flex md:flex'>
             <div>
-              <Image className='bg-black border-2 rounded-full p-1' src={cart} alt='cart' width={35} height={35} />
+              <Image className='bg-black border-2 rounded-full p-1' src={cart} onClick={() => setisCartSection(true)} alt='cart' width={35} height={35} />
             </div>
             <div>
               <Image className='bg-black border-2 rounded-full p-1' src={save} alt='save' width={35} height={35} />
@@ -55,7 +57,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className='justify-between hidden lg:w-11/12 xl:flex '>
+        <div className='justify-between 2xl:text-[13px] xl:text-[11px] lg:text-[10px] md:text-[10px] hidden lg:w-11/12 xl:flex '>
           <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>HOME</div>
           <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>ORGANIC</div>
           <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>HERBS</div>
@@ -79,7 +81,11 @@ const Navbar = () => {
           openLogin={() => setisLoginSection(true)}
         />
       )}
-
+      {isCartSection && (
+        <CartSection 
+          closeCart={() => setisCartSection(false)}
+        />
+      )}
     </>
   )
 }
