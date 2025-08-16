@@ -7,18 +7,19 @@ import profile from '../../../public/assets/account_circle_24dp_E3E3E3_FILL0_wgh
 import MenuIcon from '../../../public/assets/icons/hamburger-menu-filled-icon-in-transparent-background-basic-app-and-web-ui-bold-line-icon-eps10-free-vector.jpg'
 import Login from '../UserAuth/Login'
 import Signup from '../UserAuth/Signup'
-import CartSection from '../components/CartSection';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
   const [isLoginSection, setisLoginSection] = useState(false);
   const [isSignupSection, setisSignupSection] = useState(false);
-  const [isCartSection, setisCartSection] = useState(false);
+  const pathname = usePathname();
 
   return (
     <>
       <div className='flex flex-col w-full xl:w-[80%] mx-auto '>
         <div className='flex px-2 justify-between mx-auto w-full border-b-2 items-center md:p-3'>
-          <div id='logo' className='text-2xl font-extrabold'>Food Farm</div>
+          <div id='logo' className='text-2xl font-extrabold'><Link href="/">Food Farm</Link></div>
           <div className='w-7/12 border-2 rounded-2xl hidden lg:block'>
             <form className='flex w-full'>
               <select className='focus:outline-none w-1/6 m-5'>
@@ -47,7 +48,9 @@ const Navbar = () => {
           </div>
           <div className='flex gap-10 hidden lg:flex md:flex'>
             <div>
-              <Image className='bg-black border-2 rounded-full p-1' src={cart} onClick={() => setisCartSection(true)} alt='cart' width={35} height={35} />
+              <Link href="/Cart">
+                <Image className='bg-black border-2 rounded-full p-1' src={cart} alt='cart' width={35} height={35} />
+              </Link>
             </div>
             <div>
               <Image className='bg-black border-2 rounded-full p-1' src={save} alt='save' width={35} height={35} />
@@ -58,14 +61,18 @@ const Navbar = () => {
           </div>
         </div>
         <div className='justify-between 2xl:text-[13px] xl:text-[11px] lg:text-[10px] md:text-[10px] hidden lg:w-11/12 xl:flex '>
-          <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>HOME</div>
-          <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>ORGANIC</div>
-          <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>HERBS</div>
-          <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>SNACKS</div>
-          <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>BEVERAGES</div>
-          <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>BAKERY</div>
-          <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>CANNED FOODS</div>
-          <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>DAIRY</div>
+          <Link href="/"><div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>HOME</div></Link>
+          { pathname === '/' && (
+            <>
+            <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>ORGANIC</div>
+            <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>HERBS</div>
+            <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>SNACKS</div>
+            <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>BEVERAGES</div>
+            <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>BAKERY</div>
+            <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>CANNED FOODS</div>
+            <div className='py-5 px-10 hover:bg-red-500 hover:text-white rounded-sm'>DAIRY</div>
+            </>
+          )}
         </div>
       </div>
       {
@@ -79,11 +86,6 @@ const Navbar = () => {
         <Signup
           closeSignup={() => setisSignupSection(false)}
           openLogin={() => setisLoginSection(true)}
-        />
-      )}
-      {isCartSection && (
-        <CartSection 
-          closeCart={() => setisCartSection(false)}
         />
       )}
     </>
