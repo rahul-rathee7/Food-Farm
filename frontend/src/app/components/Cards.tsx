@@ -23,7 +23,6 @@ const Cards = () => {
     myFunc()
   }, [])
 
-  // ✅ Fixed add-to-cart logic
   const handleAddToCart = (item) => {
     setCartItems((prev) => {
       const existingItem = prev.find((cartItem) => cartItem.name === item.name)
@@ -57,7 +56,7 @@ const Cards = () => {
         >
           <div className="relative h-[280px] w-full">
             <Image
-              src={items.image || '/placeholder.png'} // ✅ fallback
+              src={items.image || '/placeholder.png'}
               alt={items.name}
               className="object-cover rounded-xl h-full w-full"
               width={300}
