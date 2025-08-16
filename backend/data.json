@@ -1,83 +1,107 @@
 [
   {
+    "id": 1,
     "name": "Apple",
+    "description": "Fresh and juicy apples, full of fiber and vitamins.",
     "originalPrice": 100,
     "currentPrice": 80,
     "discount": 20,
     "image": "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
   },
   {
+    "id": 2,
     "name": "Banana",
+    "description": "Sweet bananas packed with potassium and energy.",
     "originalPrice": 40,
     "currentPrice": 30,
     "discount": 25,
     "image": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
   },
   {
+    "id": 3,
     "name": "Orange",
+    "description": "Citrusy and tangy oranges, rich in Vitamin C.",
     "originalPrice": 80,
     "currentPrice": 60,
     "discount": 25,
     "image": "https://images.unsplash.com/photo-1547514701-42782101795e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
   },
   {
+    "id": 4,
     "name": "Mango",
+    "description": "The king of fruits, sweet and tropical taste.",
     "originalPrice": 150,
     "currentPrice": 120,
     "discount": 20,
     "image": "https://images.unsplash.com/photo-1553279768-865429fa0078?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
   },
   {
+    "id": 5,
     "name": "Pineapple",
+    "description": "Tropical pineapple with sweet and tangy flavor.",
     "originalPrice": 100,
     "currentPrice": 70,
     "discount": 30,
     "image": "https://images.unsplash.com/photo-1550258987-190a2d41a8ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
   },
   {
+    "id": 6,
     "name": "Strawberry",
+    "description": "Fresh strawberries, sweet and perfect for desserts.",
     "originalPrice": 200,
     "currentPrice": 150,
     "discount": 25,
     "image": "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
   },
   {
+    "id": 7,
     "name": "Kiwi",
+    "description": "Tangy and juicy kiwis, loaded with Vitamin C.",
     "originalPrice": 120,
     "currentPrice": 90,
     "discount": 25,
     "image": "https://images.unsplash.com/photo-1585059895524-72359e06133a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
   },
   {
+    "id": 8,
     "name": "Guava",
+    "description": "Nutritious guavas with natural sweetness.",
     "originalPrice": 60,
     "currentPrice": 45,
     "discount": 25,
     "image": "https://images.pexels.com/photos/5946085/pexels-photo-5946085.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
+    "id": 9,
     "name": "Cherry",
+    "description": "Juicy red cherries, sweet and tangy taste.",
     "originalPrice": 250,
     "currentPrice": 200,
     "discount": 20,
     "image": "https://images.pexels.com/photos/109274/pexels-photo-109274.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
+    "id": 10,
     "name": "Watermelon",
+    "description": "Refreshing watermelon, full of hydration.",
     "originalPrice": 80,
     "currentPrice": 60,
     "discount": 25,
     "image": "https://images.pexels.com/photos/260426/pexels-photo-260426.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
+    "id": 11,
     "name": "Avocado",
+    "description": "Creamy avocados, rich in healthy fats.",
     "originalPrice": 100,
     "currentPrice": 75,
     "discount": 25,
     "image": "https://images.pexels.com/photos/557659/pexels-photo-557659.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
+    "id": 12,
     "name": "Blueberry",
+    "description": "Delicious blueberries, rich in antioxidants.",
     "originalPrice": 180,
     "currentPrice": 140,
     "discount": 22,
