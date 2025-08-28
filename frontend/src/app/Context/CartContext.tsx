@@ -1,6 +1,7 @@
 "use client";
 
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
+import { getCart, saveCart } from "../api/cartApi";
 
 type CartItem = {
   id: number;
@@ -13,11 +14,11 @@ type CartItem = {
 
 type CartContextType = {
   cartItems: CartItem[];
-  setCartItems: React.Dispatch<React.SetStateAction<CartItem[]>>;
   addToCart: (item: CartItem) => void;
   removeFromCart: (id: number) => void;
-  ClearCart: () => void;
+  clearCart: () => void;
   updateQuantity: (id: number, quantity: number) => void;
+  setCartItems: React.Dispatch<React.SetStateAction<CartItem[]>>; 
 };
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
@@ -25,21 +26,21 @@ const CartContext = createContext<CartContextType | undefined>(undefined);
 export const CartContextProvider = ({ children }: { children: React.ReactNode }) => {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
-  // 🔹 Load cart from localStorage on first render
   useEffect(() => {
-    const storedCart = localStorage.getItem("cart");
-    if (storedCart) {
-      setCartItems(JSON.parse(storedCart));
-    }
+    getCart()
+      .then((data) => setCartItems(data))
+      .catch((err) => console.error("Failed to fetch cart:", err));
   }, []);
 
-  // 🔹 Save cart to localStorage whenever it changes
+  // Save cart whenever it changes
   useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cartItems));
+    if (cartItems.length > 0) {
+      saveCart(cartItems);
+    }
   }, [cartItems]);
 
   const addToCart = (item: CartItem) => {
-    setCartItems((prev) => {
+    setCartItems((prev: CartItem[]) => {
       const existing = prev.find((cartItem) => cartItem.id === item.id);
       if (existing) {
         return prev.map((cartItem) =>
@@ -51,6 +52,8 @@ export const CartContextProvider = ({ children }: { children: React.ReactNode })
       return [...prev, { ...item, quantity: 1 }];
     });
   };
+
+
 
   const removeFromCart = (id: number) => {
     setCartItems((prev) => prev.filter((item) => item.id !== id));
@@ -66,21 +69,26 @@ export const CartContextProvider = ({ children }: { children: React.ReactNode })
     );
   };
 
-  const ClearCart = () => {
+  const clearCart = () => {
     setCartItems([]);
-    localStorage.removeItem("cart");
   };
 
   return (
     <CartContext.Provider
-      value={{ cartItems, setCartItems, addToCart, removeFromCart, updateQuantity, ClearCart }}
+      value={{
+        cartItems,
+        addToCart,
+        removeFromCart,
+        updateQuantity,
+        clearCart,
+        setCartItems
+      }}
     >
       {children}
     </CartContext.Provider>
   );
 };
 
-// ✅ Custom hook for safe usage
 export const useCart = () => {
   const context = useContext(CartContext);
   if (!context) {

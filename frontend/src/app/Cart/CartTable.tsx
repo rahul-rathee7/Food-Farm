@@ -5,7 +5,7 @@ import { useCart } from '../components/useCart'
 import Image from 'next/image'
 
 const CartTable = () => {
-  const { cartItems, updateQuantity, removeFromCart, ClearCart } = useCart();
+  const { cartItems, updateQuantity, removeFromCart, clearCart } = useCart();
   const [coupenApplied, setcoupenApplied] = useState(false);
   const [discountAmount, setDiscountAmount] = useState(0);
   const [totalAmount, setTotalAmount] = useState(0);
@@ -48,6 +48,7 @@ const CartTable = () => {
   useEffect(() => {
     updateTotalAmount();
   }, [cartItems, coupenApplied]);
+  
 
   return (
     <div className="w-full h-[1/2screen] px-10">
@@ -60,7 +61,8 @@ const CartTable = () => {
           <p className='text-center'>Total</p>
           <p className='text-center'>Delete Items</p>
         </div>
-        {cartItems.map((item, index) => (
+        { cartItems.length > 0 ?
+        cartItems.map((item, index) => (
           <div
             key={`${item.id}-${index}`}
             className="h-[150px] grid grid-cols-6 items-center px-3 py-6 border-b-2 border-gray-300"
@@ -97,7 +99,7 @@ const CartTable = () => {
             <p className='text-center'>₹{(item.price * item.quantity).toFixed(2)}</p>
             <p className='text-center hover:text-red-500 cursor-pointer' onClick={() => removeFromCart(item.id)}>X</p>
           </div>
-        ))}
+        )): <p>Cart is empty</p>}
         {cartItems.length === 0 ? (
           <div className="text-center text-gray-500 py-10 border-b-2 border-gray-300">
             Your cart is empty!
@@ -132,7 +134,7 @@ const CartTable = () => {
             </div>
           </div>
           <div className='col-start-6 col-end-6 flex justify-center items-start'>
-            <button className='bg-red-500 p-2 rounded-md text-white' onClick={() => ClearCart()}>Clear Cart</button>
+            <button className='bg-red-500 p-2 rounded-md text-white' onClick={() => clearCart()}>Clear Cart</button>
           </div>
         </div>)}
       </div>
